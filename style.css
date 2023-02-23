@@ -1,0 +1,81 @@
+.container1 {
+    background-color:#eeeced;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    background-image: url(imgs/melissa-askew-B933FT2BO5k-unsplash.jpg);
+    background-size: 100%;
+    display: flex;
+    /* justify-content: center; */
+    height: 500px;
+    width: 64.5%;
+    /* border: 1px solid black; */
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    height: 420px;
+    width: 35%;
+    /* border: 1px solid black; */
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    width: 35%;
+    /* border: 1px solid black; */
+
+}
+
+.box4 {
+    background-image: url(imgs/bozhin-karaivanov-YnBkFFnjWMU-unsplash.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    width: 64.5%;
+    border: 1px solid black;
+}
+
+h1 {
+  /* align-self: center; */
+  font-size: 45px;
+  font-family: 'Gloock', serif;
+}
+
+#bio {
+   margin-left: 350px;
+   margin-top: 150px;
+}
+
+ul {
+    list-style: none;
+   
+}
+
+li {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.box5 {
+    display: flex;
+    /* justify-content: center; */
+    background-color: #eeeced99;
+    position: absolute;
+    left: calc(50% - 285px);
+    top: calc(50% - 100px);
+    height: 270px;
+    width: 565px; 
+}
+ #name {
+    align-self: center;
+    margin-left: 90px;
+    margin-bottom: 130px;
+    font-size: 60px;
+ }
