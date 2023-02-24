@@ -1,19 +1,24 @@
 .main {
     display: flex;
     flex-direction: column;
-    background-image: url(imgs/output-onlinepngtools.png);
-    height: 100% 100;
+    background-image: url(imgs/fixed-exposure.png);
+    background-size: 100% 150%;
     width: 100%;
     margin-top: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
+.bg-img {
+    background-image: url(imgs/texture.png);
+    background-size: 110% 120%;
+  
+}
 
 #white-box-top {
-    background-color: #373839;
+    background-color: white;
     height: 35px;
     width: 100%;
     padding-bottom: 0;
@@ -27,7 +32,7 @@
 h1 {
     font-size: 120px;
     padding-top: 0;
-    color: #373839;
+    color: white;
     margin-top: 0;
     line-height: .7;
     margin-left: 30px;
