@@ -5,7 +5,7 @@ $(() => {
 // Jquery smooth scroll
 // grabbing the links from the Nav bar
 // adding an event listener and handler
-
+// Created a smooth scroll function for all nav items, but was unable to figure out a dynamic way to write the code for the use of less functions
 
 
 const pgScroll1 = () => {
@@ -36,15 +36,23 @@ const pgScroll4 = () => {
 
 
 $('#4').on('click', pgScroll4 )
-
 $('#3').on('click', pgScroll3 )
-
-
-
 $('#2').on('click', pgScroll2 )
-
-
 $('#1').on('click', pgScroll1 )
+
+
+// Darkmode/Lightmode 
+
+const darkMode = () => {
+    $('html, section').toggleClass('dark-mode')
+    if ($('html, section').hasClass('dark-mode')){
+        $('.switch').attr('name', 'sunny')
+    } else {
+        $('.switch').attr('name', 'moon')
+    }
+}
+
+$('.switch').on('click', darkMode)
 
 
 
