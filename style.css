@@ -79,3 +79,37 @@ li {
     margin-bottom: 130px;
     font-size: 60px;
  }
+
+
+
+
+
+
+}
+.About-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    border: 1px solid  tomato;
+}
+
+.abm1 {
+    width: 40%;
+    margin-top: 5px;
+}
+
+#abm1-text {
+    line-height: 40px;
+}
+
+.abm2 {
+    height: 435px;
+    width: 300px;
+    border: 1px solid  tomato;
+}
+
+#abm2-pic {
+    background-image: url(imgs/Wallpaper.webp);
+}
+

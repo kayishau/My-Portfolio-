@@ -1,38 +1,133 @@
+/* *{
+    This is a reset, it gives everything a padding and margin of 0 starting off
+    margin: 0;
+    padding: 0;
+} */
+/* body {
+    overflow: hidden;
+} */
 .main {
     display: flex;
     flex-direction: column;
-    background-image: url(imgs/fixed-exposure.png);
-    background-size: 100% 150%;
+    background-image: url(imgs/wesley-tingey-_0sEjWfAK3Q-unsplash.jpg);
+    background-size: contain;
+    background-color: white;
     width: 100%;
+    height: 100%;
     margin-top: 0;
-    background-attachment: fixed;
+    /* overflow-y: scroll;
+    scroll-behavior: smooth; */
+    /* background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   */
 }
 
-.bg-img {
-    background-image: url(imgs/texture.png);
+.nav-top {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    background-color: rgba(183, 142, 222, 0.62);
+}
+
+.nav-top ul {
+    list-style: none;
+    margin-left: 750px;
+    margin-right: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-top li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.nav-top li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eeeced;
+}
+
+.nav-top li a:hover {
+    color: purple;
+}
+/* .bg-img {
+    background-image: url(imgs/texture-low-op.png);
     background-size: 110% 120%;
   
-}
+} */
 
-#white-box-top {
-    background-color: white;
-    height: 35px;
+/* ///////////////////////////////////////////////////////////////////// */
+
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
     width: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    background-image: url(imgs/andrej-lisakov-O0j9EivTKfI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0%;
+    justify-content: center;
+    align-items: center;
 }
 
-#drop-menu {
-    font-size: 20px;
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 h1 {
-    font-size: 120px;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+#first-name {
+    padding-right: 50px;
+}
+
+.SE {
+    align-self: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    align-self: center;
+}
+
+#git {
+    margin: 20px;
+}
+
+#link {
+    margin: 20px;
+}
+
+#twit {
+    margin: 20px;
+}
+/* //////////////////////////////////////////////////////////////////// */
+.section-2 {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 80px;
     padding-top: 0;
-    color: white;
+    color: black;
     margin-top: 0;
     line-height: .7;
     margin-left: 30px;
@@ -43,67 +138,60 @@ h1 {
 #me {
     margin-left: 40px;
 }
-/* ///////////////////////////////////////////////////////////////////// */
 .About-me {
-    margin-top: 80px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .abm1 {
-    margin-top: 70px;
-    margin-left: 150px;
-    margin-right: 50px;
     width: 40%;
 }
 
 #abm1-text {
     line-height: 40px;
+    text-align: center;
 }
 
 .abm2 {
-    display: flex;
-    height: 500px;
-    width: 400px;
-    margin-left: 50px;
-    margin-top: 35px;
-    margin-right: 150px;
+    background-image: url(imgs/me.png);
+    background-size: 100% 100%;
+    height: 600px;
+    width: 450px;  
 }
-
+/* 
 #abm2-pic {
-    background-image: url(imgs/40A34A19-2C6D-4581-BCCE-FE42B6AFCA46_1_105_c.jpeg);
-    background-size: 100%;
-    height: 500px;
-    width: 400px;
-}
-
-/* ///////////////////////////////////////////////////////////////////////// */
-.parallax {
-    display: flex;
-    flex-direction: column;
-    /* margin-top: 250px; */
-    /* position: relative; */
-}
-
-/* #white-bar {
-    display: flex;
-    justify-content: flex-end;
-    background-color:  #eeeced;
+    background-image: url(imgs/me.png);
+    background-size: cover;
+    height: 600px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+    border: 1px solid  tomato;
 } */
 
-.intro-text  {
-    margin-top: 220px;
-    margin-bottom: 0;
-    margin-left: 400px;
-    line-height: 0px,
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
 }
 
-.intro-text1 {
-    font-size: 70px; 
-    margin-bottom: 0;
-    line-height: 0;
-    margin-left: 450px;
-    color: #eeeced;
+
+.parallax {
+    /* display: flex; */
+}
+
+.intro-text  {
+    margin-top: 8px;
+    color: black;
+    line-height: 50px;
+    font-size: 80px;
+    align-self: flex-end;
+    margin-right: 100px;
 }
 
 /* .intro-text1 {
@@ -123,32 +211,40 @@ h1 {
     display: flex;
     flex-direction: row;
     background-color: #eeeced;
-    height: 400px;
+    height: 638px;
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 0px;
 }
 
 
 .pbar-text-right {
     font-size: 20px;
+    text-align: center;
     margin-top: 70px;
     margin-left: 80px;
     margin-right: 40px;
+    margin-bottom: 50px;
     line-height: 30px;
-    width: 50%;
+    align-self: center;
+    width: 40%;
 }
 
 
 .pbar-text-left {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
     margin-top: 70px;
     margin-right: 80px;
     margin-left: 40px;
     line-height: 30px;
-    width: 50%;
+    width: 40%;
 }
 /* ////////////////////////////////////////////////////////////////// */
+
+.section-4 {
+    height: 100vh;
+    width: 100%;
+    border: 1px solid tomato;
+}
 
 .end-section {
     display: flex;
@@ -158,9 +254,9 @@ h1 {
 }
 
 h2 {
-    font-size: 100px;
+    font-size: 80px;
     padding-top: 0;
-    color: #eeeced;
+    color: black;
     margin-top: 0;
     line-height: .7;
     margin-left: 30px;   
@@ -179,14 +275,14 @@ h2 {
 
 .proj {
     background-color: #eeeced;
-    height: 270px;
-    width: 240px;
+    height: 300px;
+    width: 270px;
 }
 
-#white-box-bot {
+/* #white-box-bot {
     background-color: #eeeced;
     height: 35px;
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
-}
+} */
