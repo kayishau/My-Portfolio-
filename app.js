@@ -54,6 +54,18 @@ const darkMode = () => {
 
 $('.switch').on('click', darkMode)
 
+// Slide in effect
 
+const slideUp = () => {
+    $('.proj').slideUp(1000)
+}
+
+$('#1').on('click', slideUp)
+
+const slideToggle = () => {
+    $('.proj').slideToggle(1200)
+}
+
+$('#4').on('click', slideToggle)
 
 })
