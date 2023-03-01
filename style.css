@@ -8,12 +8,13 @@ body {
     transition: all 0.8s;
 }
 :root {
-    --primary:#eeeced;
-    --secondary: white;
+    --primary:#5d6dc8f4;
+    /* --secondary: white; */
 }
 .dark-mode {
     /* background-color: rgb(103, 102, 102); */
     --primary: #7a7a7af9; 
+
 }
 
 .main {
@@ -21,7 +22,6 @@ body {
     flex-direction: column;
     background-image: url(imgs/final-darkmode.png);
     background-size: cover;
-   
     width: 100%;
     height: 100%;
     margin-top: 0;
@@ -53,6 +53,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 15px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .nav-top li a {
@@ -62,7 +63,7 @@ body {
 }
 
 .nav-top li a:hover {
-    color: purple;
+    color: rgb(207, 81, 112);
 }
 
 .switch {
@@ -115,6 +116,7 @@ form {
     margin-bottom: 0%;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 4px 6px 0px  rgba(0,0,0,0.3);
 }
 
 .icons {
@@ -128,7 +130,10 @@ form {
 }
 
 h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
     font-size: 70px;
+    text-shadow: rgb(206, 219, 234) 10px 0 10px;
     margin-bottom: 40px;
     color: var(--primary)
 }
@@ -142,6 +147,34 @@ h1 {
     font-size: 20px;
     margin-bottom: 30px;
     color: var(--primary)
+}
+
+.slider {
+    height: 50px;
+    padding-left: 15px;
+    /* overflow: hidden; */
+}
+
+.slider-text1 {
+    animation: slide 3s linear infinite;
+}
+.slider-text2 {
+    animation: slide 3s linear infinite;
+}
+
+.slider-text3 {
+    animation: slide 3s linear infinite;
+}
+
+
+@keyframes slide {
+    0% {margin-top: -300px;}
+    5% {margin-top: -200px;}
+    33% {margin-top: -200px;}
+    38% {margin-top: -100px;}
+    66% {margin-top: -100px;}
+    71% {margin-top: 0px;}
+    100% {margin-top: 0px;}
 }
 
 .icons {
@@ -160,7 +193,22 @@ h1 {
 #twit {
     margin: 20px;
 }
+
+.content{
+    
+}
+
 /* //////////////////////////////////////////////////////////////////// */
+
+.back-video {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .section-2 {
     height: 100vh;
     width: 100%;
@@ -176,6 +224,7 @@ h2 {
     margin-left: 30px;
     margin-right: 0;
     padding-right: 0;
+    text-shadow: rgba(109, 85, 57, 0.274) 10px 0 10px;
 }
 
 #me {
@@ -317,7 +366,7 @@ h2 {
 
 
 .proj {
-    background-color: var(--primary);
+    background-color: white;
     height: 300px;
     width: 270px;
 }
