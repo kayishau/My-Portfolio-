@@ -68,4 +68,22 @@ const slideToggle = () => {
 
 $('#4').on('click', slideToggle)
 
+
+// Modal popup
+
+const $form = $('.wrapper')
+
+const openForm = () => {
+    $form.css('display', 'block')
+}
+
+const closeForm = () => {
+    $form.css('display', 'none')
+}
+
+$('#5').on('click', openForm)
+$('#close-form').on('click', closeForm )
+
+
+
 })
