@@ -74,7 +74,7 @@ $('#4').on('click', slideToggle)
 const $form = $('.wrapper')
 
 const openForm = () => {
-    $form.css('display', 'block')
+    $form.css('display', 'flex')
 }
 
 const closeForm = () => {
